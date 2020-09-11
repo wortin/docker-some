@@ -1,0 +1,21 @@
+version: '3'
+services:
+  docker-some:
+    image: wortin/docker-some
+    container_name: wortin-docker-some
+    restart: always
+    volumes:
+      - ./config:/usr/local/apps/docker-some/config
+      - ./logs:/usr/local/apps/docker-some/logs
+    ports:
+      - 8091:8091
+    networks:
+      docker-some-web:
+        ipv4_address: 172.18.0.12
+
+networks:
+  docker-some-web:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16

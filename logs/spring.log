@@ -1,0 +1,16 @@
+2020-09-11 13:42:08.730  INFO 94222 --- [main] c.w.docker.some.DockerSomeApplication    : Starting DockerSomeApplication on wortinMacBookPro.local with PID 94222 (/Users/zhangdingwen/IdeaProjects/docker-some/target/classes started by zhangdingwen in /Users/zhangdingwen/IdeaProjects/docker-some)
+2020-09-11 13:42:08.731  INFO 94222 --- [main] c.w.docker.some.DockerSomeApplication    : No active profile set, falling back to default profiles: default
+2020-09-11 13:42:09.322  INFO 94222 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2020-09-11 13:42:09.337  INFO 94222 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-11 13:42:09.337  INFO 94222 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-11 13:42:09.385  INFO 94222 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-11 13:42:09.385  INFO 94222 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 628 ms
+2020-09-11 13:42:09.499  INFO 94222 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-11 13:42:09.615  INFO 94222 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2020-09-11 13:42:09.619  INFO 94222 --- [main] c.w.docker.some.DockerSomeApplication    : Started DockerSomeApplication in 1.123 seconds (JVM running for 1.462)
+2020-09-11 13:42:20.841  INFO 94222 --- [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-11 13:42:20.841  INFO 94222 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-11 13:42:20.845  INFO 94222 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-09-11 13:42:20.857  INFO 94222 --- [http-nio-8091-exec-1] c.w.d.some.service.impl.HostServiceImpl  : start to getHostIP
+2020-09-11 13:42:20.858  INFO 94222 --- [http-nio-8091-exec-1] c.w.d.some.service.impl.HostServiceImpl  : finish to getHostIP
+2020-09-11 13:42:47.060  INFO 94222 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
