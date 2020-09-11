@@ -12,7 +12,58 @@
 
 然后进一步测试使用xjar给jar包加密，xjar是github上的开源项目：https://github.com/core-lib/xjar
 
-在配置文件中加入xjar的插件
+在pom配置文件中加入xjar的插件：
+
+```xml
+<project>
+    <!-- 设置 jitpack.io 插件仓库 -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <!-- 添加 XJar Maven 插件 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.core-lib</groupId>
+                <artifactId>xjar-maven-plugin</artifactId>
+                <version>4.0.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                        <phase>package</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
+
+然后再打包
+
+```shell script
+mvn clean package -Dxjar.password=hpcpltSEC202O
+```
+
+然后构建启动程序xjar
+
+```shell script
+GOOS=linux GOARCH=amd64 go build target/xjar.go
+```
+
+启动时通过启动程序启动xjar包
+
+```shell script
+./xjar java -jar docker-some-0.0.1-SNAPSHOT.xjar
+```
+
+
+
 
 
 

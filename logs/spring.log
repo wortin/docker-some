@@ -14,3 +14,18 @@
 2020-09-11 13:42:20.857  INFO 94222 --- [http-nio-8091-exec-1] c.w.d.some.service.impl.HostServiceImpl  : start to getHostIP
 2020-09-11 13:42:20.858  INFO 94222 --- [http-nio-8091-exec-1] c.w.d.some.service.impl.HostServiceImpl  : finish to getHostIP
 2020-09-11 13:42:47.060  INFO 94222 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-11 09:31:29.683  INFO 10 --- [main] c.w.docker.some.DockerSomeApplication    : Starting DockerSomeApplication v0.0.1-SNAPSHOT on 880e34b45589 with PID 10 (/usr/local/apps/docker-some/docker-some.jar started by root in /usr/local/apps/docker-some)
+2020-09-11 09:31:29.690  INFO 10 --- [main] c.w.docker.some.DockerSomeApplication    : No active profile set, falling back to default profiles: default
+2020-09-11 09:31:31.851  INFO 10 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2020-09-11 09:31:31.901  INFO 10 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-11 09:31:31.904  INFO 10 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-09-11 09:31:32.102  INFO 10 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-11 09:31:32.103  INFO 10 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2325 ms
+2020-09-11 09:31:32.705  INFO 10 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-11 09:31:33.282  INFO 10 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2020-09-11 09:31:33.290  INFO 10 --- [main] c.w.docker.some.DockerSomeApplication    : Started DockerSomeApplication in 4.731 seconds (JVM running for 5.571)
+2020-09-11 09:32:26.921  INFO 10 --- [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-11 09:32:26.923  INFO 10 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-11 09:32:26.935  INFO 10 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-09-11 09:32:26.997  INFO 10 --- [http-nio-8091-exec-1] c.w.d.some.service.impl.HostServiceImpl  : start to getHostIP
+2020-09-11 09:32:26.999  INFO 10 --- [http-nio-8091-exec-1] c.w.d.some.service.impl.HostServiceImpl  : finish to getHostIP
