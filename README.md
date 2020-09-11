@@ -8,8 +8,11 @@
 4. 通过exec.sh进入容器内部查看情况
 5. 通过test.sh测试调用应用的接口
 
+## xjar加密jar包建构
+
 然后进一步测试使用xjar给jar包加密，xjar是github上的开源项目：https://github.com/core-lib/xjar
 
+在配置文件中加入xjar的插件
 
 
 
